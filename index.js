@@ -442,7 +442,7 @@ const get = require('got')
                id,
                `
       Quotes untuk 
-*${id.split("@s.whatsapp.net")[0]}*
+Anda
      _${kata}_
         
     
@@ -471,7 +471,7 @@ const get = require('got')
       console.log(""+ h);
       conn.sendMessage(id,
             `
-      Halo *${id.split("@s.whatsapp.net")[0]}*
+      Halo Braay
       Arti dari namamu adalah
 
   ***********************************
