@@ -49,7 +49,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan kode qr dengan whatsapp!`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan ni kode qr dengan whatsapp lu broo!`);
 });
 
 conn.on('credentials-updated', () =>
@@ -78,7 +78,7 @@ conn.on('message-new', async(m) =>
    let id = m.key.remoteJid
    const messageType = Object.keys(messageContent)[0] // message will always contain one key signifying what kind of message
    let imageMessage = m.message.imageMessage;
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${id.split("@s.whatsapp.net")[0]} ] => ${text}`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => Nomor: [ ${BotName} ] => ${text}`);
 
 
 // Groups
